@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Esto indica que usa el archivo css -->
+        <script src="script.js.js" defer></script>
+        <title>Calculadora de hidratación</title>
+        <!-- Titulo de la pestaña -->
+        <meta charset="UTF-8">
+        <!-- Establece set de caracteres -->
+    </head>
+    <!-- Cuando en el HTML tenemos muchos elementos del mismo tipo (por ejemplo, muchos div) pero solo queremos modificar uno de ellos, podemos utilizar un selector de ID.-->
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Hidratacion Basal</h1>
+                    <!-- Header1: Encabezaso de contenido -->
+                    <input class="item" id="peso" type="number" placeholder="Ingrese peso en kg" />
+                    <!-- input: Celda donde ingresar datos -->
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <!-- Boton -->
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                    <p class="item resultado" id="met">(Se calculó utilizando el método x)</p>
+                    <!-- el tag p son parrafos -->
+                </div>
+            </div>    
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿Como se calcula?</h1>
+                    <ul>
+                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                     </ul>
+                    <!-- Utilizamos la etiqueta <ul> (de un-ordered list) y <li> (de list item) para hacer una lista con viñetas. -->      
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
